@@ -8,14 +8,12 @@
       function transfer() {
         window.location.assign("http://redziu.xyz/video.mp4");
       }
-      var buttonTak = document.getElementById("odpTak");
-      var buttonNie = document.getElementById("odpNie");
-      buttonTak.addEventListener("click", transfer, false);
-      buttonNie.addEventListener("click", transfer, false);
+      document.getElementById("odpTak").addEventListener("click", transfer);
+      document.getElementById("odpNie").addEventListener("click", transfer);
     </script>
   </head>
   <body>
     <button id="odpTak">Lubisz mnie</button>
-    <button id="odNie">Nie lubisz mnie</button>
+    <button id="odpNie">Nie lubisz mnie</button>
   </body>
 </html>
