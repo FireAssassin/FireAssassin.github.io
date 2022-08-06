@@ -1,22 +1,21 @@
 <html>
   <head>
-    <meta property="og:title" content="Fajna strona">
+    <meta property="og:title" content="Quiz">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#bd2c2c">
-    <meta property="og:description" content="Odwiedź tą strone już dziś za 21.37$">
-    <style>
-      .hehe {
-        color: red;
-        background-color: darkred;
-        align-items: center;
-        justify-items: center;
-        height: 10vw;
-        width: 10vw;
-        border-radius: 50%;
+    <meta property="og:description" content="Bardzo ważne">
+    <script>
+      function transfer() {
+        window.location.assign("http://redziu.xyz/video.mp4");
       }
-    </style>
+      var buttonTak = document.getElementById("odpTak");
+      var buttonNie = document.getElementById("odpNie");
+      buttonTak.addEventListener("click", transfer, false);
+      buttonNie.addEventListener("click", transfer, false);
+    </script>
   </head>
   <body>
-    <div class='hehe'></div>
+    <button id="odpTak">Lubisz mnie</button>
+    <button id="odNie">Nie lubisz mnie</button>
   </body>
 </html>
