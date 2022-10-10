@@ -12,13 +12,22 @@
         <div id="background">
         </div>
         <div class="centerhv">
-            <from id="login" action="./style.css" method="post">
-                <label for="login">Login</label>
-                <input name="login" type="text"><br>
-                <label for="pass">Hasło</label>
-                <input name="pass" type="password"><br>
-                <button type="submit">Zaloguj</button>
-            </from>
+            <div class="main">
+                <div class="logreg">
+                    <button id="loginbtn">Login</button>
+                    <button id="regbtn">Rejestracja</button>
+                </div>
+                <br>
+                <div id="logincontainer">
+                    <form id="login" class="login" action="./style.css" method="post">
+                        <label for="login">Email lub Login</label>
+                        <input name="login" type="text"><br>
+                        <label for="pass">Hasło</label>
+                        <input name="pass" type="password"><br>
+                        <button type="submit">Zaloguj</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </body>
 </html>
