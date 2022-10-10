@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Trebuchet MS;
+}
+
+#background {
+    animation: hue 4s infinite linear;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: radial-gradient(hsl(0, 100%, 50%) 9%, transparent 9%);
+    background-size: 3em 3em;
+    z-index: -1;
+}
